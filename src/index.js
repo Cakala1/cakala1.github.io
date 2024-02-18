@@ -1,5 +1,6 @@
 import showHome from './home';
 import showMenu from './menu';
+import showContact from './contact';
 
 const navList = document.querySelector(".nav-list");
 
@@ -13,6 +14,11 @@ navList.addEventListener("click", (e) => {
         e.target.parentNode.parentNode.querySelector(".active").className = "";
         e.target.parentNode.classList.add("active");
         showHome();
+    }
+    else if(e.target.id === "contact-btn"){
+        e.target.parentNode.parentNode.querySelector(".active").className = "";
+        e.target.parentNode.classList.add("active");
+        showContact();
     }
 })
 

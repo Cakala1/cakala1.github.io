@@ -1,6 +1,7 @@
 function createHome(){
     const container = document.createElement("div");
 
+    container.classList.add("home");
     const home_heading = document.createElement("h3");
     home_heading.innerText = "BigBurger - best burgers in Warsaw";
 

@@ -78,13 +78,20 @@ header{
 }
 
 #content{
-    min-height: 70vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    max-width: 80rem;
-    width: 80%;
-    margin: 2rem auto;
-    padding: 5rem 0;
-    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div:first-child{
+        background-color: rgba(0, 0, 0, 0.5);
+        max-width: 80rem;
+        width: 70%;
+        min-height: 70vh;
+        margin: 2rem auto;
+        padding: 5rem 2rem;
+        color: #fff;
+    }
 
     .home-img{
         margin: 0 auto;
